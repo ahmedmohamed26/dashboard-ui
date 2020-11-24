@@ -1,0 +1,32 @@
+<section class="challenges">
+    <div class="col-md-12 p-0">
+        <div class="parent d-flex align-items-center justify-content-between">
+            <h6 class="mb-0 challeng-number">4 Challenges</h6>
+            <h6 class="mb-0 create-challeng">Create New Challenge<i class="fa fa-plus"></i></h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" *ngFor='let card of cards'>
+            <div class="parent-card">
+                <h5 class="active-card" [ngClass]="{'active' : card.active == true}">{{card.active ? 'ACTIVE' :'INACTIVE'}}<i class="fa fa-circle"></i></h5>
+                <div class="image d-flex align-items-center">
+                    <img [src]='card.image'>
+                    <div>
+                        <h5 class="collect">{{card.collect}}</h5>
+                        <h6 class="date">{{card.date}}</h6>
+                    </div>
+                </div>
+                <!-- image -->
+                <p class="description">{{card.description}}</p>
+                <ul class="list-icons mb-0 row list-unstyled">
+                    <li class="col-6 d-flex align-items-center" *ngFor='let icon of card.icons'>
+                        <img [src]='icon.image'>
+                        <h6 class="mb-0">{{icon.title}}</h6>
+                    </li>
+                </ul>
+            </div>
+            <!-- parent-card -->
+        </div>
+        <!-- col -->
+    </div>
+</section>

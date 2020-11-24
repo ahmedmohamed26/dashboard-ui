@@ -1,0 +1,107 @@
+@import '../../../../assets/style/variables.scss';
+
+.challenges {
+
+    padding: 15px 0;
+
+    .parent {
+        .challeng-number {
+            font-size: $subMiniSize;
+            color: $second-color;
+            margin-bottom: 0;
+            font-family: 'poppins-regular';
+
+        }
+
+        .create-challeng {
+            font-size: $normalSize;
+            color: $active-color;
+            cursor: pointer;
+            margin-bottom: 0;
+            font-family: 'poppins-regular';
+
+            .fa {
+                color: #fff;
+                background-color: $active-color;
+                padding: 4px;
+                border-radius: $circleBorderRadius;
+                margin-left: 5px;
+                font-size: $smallSize;
+            }
+        }
+    }
+
+    .parent-card {
+        border: 1px solid #ddd;
+        border-radius: $borderRadius;
+        padding: 25px;
+        margin-top: 25px;
+        position: relative;
+
+        .active-card {
+            font-size: $smallSize;
+            color: $second-color;
+            font-family: 'poppins-medium';
+            margin-bottom: 0;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+            .fa {
+                margin-left: 5px;
+            }
+        }
+                .active{
+                    color: $active-card-color;
+                }
+
+        .image {
+            img {
+                margin-right: 10px;
+            }
+
+            .collect {
+                font-size: $normalSize;
+                color: $main-color;
+                font-family: 'poppins-bold';
+            }
+
+            .date {
+                font-size: $subMiniSize;
+                color: $main-color;
+                font-family: 'poppins-regular';
+                margin-bottom: 0;
+            }
+        }
+
+        .description {
+            color: $second-color;
+            font-size: $subMiniSize;
+            font-family: 'poppins-regular';
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -o-line-clamp: 3;
+            -moz-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            margin: 10px 0 0 0;
+        }
+
+        .list-icons {
+            li {
+                margin-top: 10px;
+
+                img {
+                    margin-right: 5px;
+                }
+
+                h6 {
+                    font-size: $subMiniSize;
+                    color: $main-color;
+                    font-family: 'poppins-regular';
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<div class="side-menu">
+  <div class="name-company d-flex align-items-center">
+    <img src='assets/images/logo.png' alt='game ball' />
+    <h1 class="mb-0">gameball</h1>
+  </div>
+  <ul class="list-item list-unstyled">
+    <li class="nav-item" *ngFor="let item of routerList">
+      <a class='nav-link d-flex align-items-center' routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}"
+        [routerLink]="'/' + item.path">
+        <img [src]="item.image" [alt]="item.name" />
+        {{item.name}}
+      </a>
+    </li>
+  </ul>
+  <div class="avatar d-flex  align-items-center">
+    <img src='assets/images/Avatar.png' class="mr-2" />
+    <div>
+      <h5>hello, anne!</h5>
+      <h6 class="mb-0">account settings</h6>
+    </div>
+  </div>
+</div>

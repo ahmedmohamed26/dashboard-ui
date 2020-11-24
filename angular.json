@@ -28,6 +28,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gameball-task"
+    }
+  },
+  "defaultProject": "gameball-task",
+  "cli": {
+    "analytics": "23e6ce5a-0ff4-4120-b3fb-6d00b298c5de"
+  }
 }

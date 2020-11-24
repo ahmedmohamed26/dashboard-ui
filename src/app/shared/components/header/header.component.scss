@@ -1,0 +1,36 @@
+@import '../../../../assets/style/variables.scss';
+
+
+header{
+    padding: 15px;
+    h1{
+        color: $third-color;
+        font-size: $defaultSize;
+        font-family:'poppins-bold';
+    }
+    .img-profile{
+        width: 40px;
+        height: 40px;
+    }
+    .profile{
+        h6{
+            font-size: $miniSize;
+            color: $main-color;
+            font-family:'poppins-light';
+            text-transform: capitalize;
+        }
+        form{
+            .form-control{
+                border: none;
+                padding: 0;
+                height: 25px;
+                font-size: $miniSize;
+                font-family:'poppins-bold';
+                &:focus{
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

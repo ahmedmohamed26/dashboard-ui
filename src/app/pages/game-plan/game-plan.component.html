@@ -1,0 +1,9 @@
+<section class="game-plan">
+  <ul class="list list-unstyled d-flex">
+    <li class="nav-item" *ngFor="let item of routerList">
+      <a class="nav-link" [routerLink]="'/game-plan' + item.path" 
+      routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }"
+        >{{item.name}}</a></li>
+  </ul>
+  <router-outlet></router-outlet>
+</section>
